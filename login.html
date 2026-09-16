@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ford</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <main class="pagina-login">
+        <section class="lado-imagem">
+            <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/gdp/ranger/2024/overview/ford-ranger-2024-overview-hero.jpg" alt="Ford Ranger" class="imagem-veiculo">
+        </section>
+
+        <section class="lado-formulario">
+            <div class="conteudo-form">
+                <div class="topo-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Ford_logo_flat.svg" alt="Logo Ford" class="logo-ford">
+                </div>
+
+                <h2 class="titulo-boas-vindas">Boas-vindas</h2>
+
+                <form action="#" method="post" class="form-login">
+                    <div class="linha-input">
+                        <div class="caixa-input ativo">
+                            <i class="fa-regular fa-user icone-input"></i>
+                            <input type="email" id="email-usuario" name="email_usuario" placeholder="Insira seu e-mail" required>
+                        </div>
+                        <i class="fa-solid fa-circle-info icone-ajuda"></i>
+                    </div>
+
+                    <div class="linha-input">
+                        <div class="caixa-input">
+                            <i class="fa-solid fa-lock icone-input"></i>
+                            <input type="password" id="senha-usuario" name="senha_usuario" placeholder="Insira sua senha" required>
+                            <i class="fa-regular fa-eye-slash icone-ver-senha"></i>
+                        </div>
+                    </div>
+
+                    <div class="opcoes-login">
+                        <span class="texto-lembrar">Logar automaticamente</span>
+                        <div class="controle-toggle">
+                            <label class="chave-seletora">
+                                <input type="checkbox" id="logar-automatico" name="logar_automatico">
+                                <span class="marcador-toggle arredondado"></span>
+                            </label>
+                            <i class="fa-solid fa-circle-info icone-ajuda"></i>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="botao-entrar">Entrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
