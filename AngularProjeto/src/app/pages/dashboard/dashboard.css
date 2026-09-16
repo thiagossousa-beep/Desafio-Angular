@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    min-height: 100vh;
+    padding: 20px 15px;
+}
+
+.painel-dashboard {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.titulo-dashboard {
+    text-align: center;
+    color: #0b4d9c;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.area-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+
+.card-info {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.titulo-card {
+    background-color: #f5f5f5;
+    padding: 10px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #555555;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.caixa-selecao {
+    margin: 15px 12px;
+    padding: 8px 10px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.valor-card {
+    padding: 15px 12px 2px 12px;
+    font-size: 22px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.unidade-card {
+    padding: 0 12px 15px 12px;
+    font-size: 11px;
+    color: #777777;
+}
+
+.destaque-veiculo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.imagem-carro {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    object-fit: contain;
+}
+
+.container-tabela {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.tabela-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabela-veiculo {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+.tabela-veiculo th {
+    background-color: #0b4d9c;
+    color: #ffffff;
+    padding: 12px 15px;
+    font-size: 13px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.tabela-veiculo td {
+    padding: 12px 15px;
+    font-size: 13px;
+    color: #333333;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.caixa-vin {
+    display: inline-block;
+    border: 1px solid #cccccc;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 12px;
+    background-color: #fafafa;
+}
+
+@media (min-width: 576px) {
+    .area-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .area-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .titulo-dashboard {
+        font-size: 28px;
+    }
+}

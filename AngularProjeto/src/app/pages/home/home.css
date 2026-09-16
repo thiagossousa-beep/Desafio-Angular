@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.topo-pagina {
+    width: 100%;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.botao-abrir-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-menu {
+    font-size: 24px;
+    color: #00875a;
+}
+
+.area-conteudo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.wrapper-veiculo {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-fundo-ranger {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.card-boas-vindas {
+    position: absolute;
+    width: 85%;
+    max-width: 420px;
+    min-height: 240px;
+    background-color: rgba(240, 242, 245, 0.78);
+    backdrop-filter: blur(4px);
+    border: 1px solid #c0c4cc;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.cabecalho-card {
+    padding: 12px 16px;
+    border-bottom: 1px solid #d0d4dc;
+}
+
+.titulo-sistema {
+    font-size: 13px;
+    color: #555555;
+    font-weight: 500;
+}
+
+.corpo-card {
+    padding: 24px 16px;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.texto-boas-vindas {
+    font-size: 18px;
+    color: #0070c0;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .topo-pagina {
+        padding: 20px 32px;
+    }
+
+    .icone-menu {
+        font-size: 26px;
+    }
+
+    .card-boas-vindas {
+        width: 70%;
+        min-height: 280px;
+    }
+
+    .cabecalho-card {
+        padding: 14px 20px;
+    }
+
+    .titulo-sistema {
+        font-size: 14px;
+    }
+
+    .corpo-card {
+        padding: 30px 20px;
+    }
+
+    .texto-boas-vindas {
+        font-size: 20px;
+    }
+}

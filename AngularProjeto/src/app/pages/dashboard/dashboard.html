@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard FORD</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <main class="painel-dashboard">
+        <h1 class="titulo-dashboard">Dashboard FORD</h1>
+
+        <section class="area-cards">
+            <div class="card-info">
+                <span class="titulo-card">Veículo</span>
+                <select id="seletor-veiculo" class="caixa-selecao">
+                    <option value="ranger">Ranger</option>
+                    <option value="mustang" selected>Mustang</option>
+                    <option value="territory">Territory</option>
+                    <option value="bronco">Bronco Sport</option>
+                </select>
+            </div>
+
+            <div class="card-info">
+                <span class="titulo-card">Total de Vendas</span>
+                <strong class="valor-card">1500</strong>
+                <span class="unidade-card">Unid.</span>
+            </div>
+
+            <div class="card-info">
+                <span class="titulo-card">Conectados</span>
+                <strong class="valor-card">500</strong>
+                <span class="unidade-card">Unid.</span>
+            </div>
+
+            <div class="card-info">
+                <span class="titulo-card">Update Software</span>
+                <strong class="valor-card">750</strong>
+                <span class="unidade-card">Unid.</span>
+            </div>
+        </section>
+
+        <section class="destaque-veiculo">
+            <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/gdp/mustang/2024/overview/ford-mustang-overview.png" alt="Mustang Black" class="imagem-carro">
+        </section>
+
+        <section class="container-tabela">
+            <div class="tabela-responsive">
+                <table class="tabela-veiculo">
+                    <thead>
+                        <tr>
+                            <th>Código - Vin</th>
+                            <th>Odômetro</th>
+                            <th>Nível de Combustível</th>
+                            <th>Status</th>
+                            <th>Lat.</th>
+                            <th>Long.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input class="caixa-vin">
+                            </td>
+                            <td>50000 Km</td>
+                            <td>90 %</td>
+                            <td>on</td>
+                            <td>-12,2322</td>
+                            <td>-35,2314</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
